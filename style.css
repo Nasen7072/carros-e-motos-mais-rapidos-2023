@@ -1,22 +1,3 @@
-.mobile-menu div {
-
-width: 32px;
-
-height: 2px;
-
-background: #fff;
-
-
-
-margin: 8px;
-
-
-
-}
-
-
-
-
 {
    margin: 0;
    padding: 0;
@@ -71,5 +52,26 @@ center center;
  letter-spacing: 3px;
 
  margin-left: 32px;
+
+} 
+
+.mobile-menu {
+
+ cursor: pointer;
+
+ }
+   .mobile-menu div {
+
+width: 32px;
+
+height: 2px;
+
+background: #fff;
+
+
+
+margin: 8px;
+
+
 
 }
