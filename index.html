@@ -1,125 +1,87 @@
-
-<meta name="viewport" content="width=device-width,
-
-tml
-
-e-navbar.js
-
-SS
-
-initial-scale=1.0">
-
-<title>elchavo.com</title>
-
-<link rel="stylesheet" href="style.css">
-
-</head>
-
-<body>
-
- <html></html>
-
-<header>
-
-<nav>
-
-<a class="logo" href="/">REFRESHMENTS</a>
-
-<div class="mobile-menu">
-
-<div class="line1"></div>
-
-<div class="line2"></div>
-
-<div class="line3"></div>
-
-</div>
-
-<ul class="nav-list">
-
-<li><a href="/">Início</a></li>
-
-<li><a href="/">Sobre</a></li>
-
-<li><a href="/">Projetos</a></li>
-
-<11><a href="/">Contato</a></li>
-
-</ul>
-
-</nav>
-
-</header>
- 
-</body>
-
-</html>
-
-
-
-
-
-
-
-
-
-
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto GL</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1rem;
-        }
-        h1 {
-            font-size: 2rem;
-        }
-        main {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 2rem;
-            background-color: #fff;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        footer {
-            text-align: center;
-            padding: 1rem;
-            background-color: #333;
-            color: #fff;
-        }
-    </style>
+    <title>El Chavo - Venda de Sucos</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>El Chavo</h1>
-        <p>Os melhores sucos do país</p>
+    <header id="home">
+        <h1>El Chavo - Venda de Sucos</h1>
+        <p>Os melhores sucos naturais da região!</p>
     </header>
+    <nav>
+        <div class="menu-hamburguer">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="menu-cascata">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li class="menu-sucos"><a href="#">Sucos</a>
+                <ul>
+                    <li><a href="#suco-tamarindo">Suco de Tamarindo</a></li>
+                    <li><a href="#suco-laranja">Suco de Laranja</a></li>
+                    <li><a href="#suco-limao">Suco de Limão</a></li>
+                </ul>
+            </li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
     <main>
-        <h2>O que são?</h2>
-        <p> Os sucos El chavo são sucos que encantam as pessoas com seu sabor suculento e seu jeito estranho de experimentar, adoramos brincar com a mente das pessoas com brincadeiras e jogos com os sucos.</p>
-        <h2>Vendemos sucos para todo Brasil!</h2>
-        
-        <h2>Aqui estão os exemplos dos sucos:"</h2>
-
-            <p> suco de tamarino com sabor de laranja: RS 9,99</p>
-               <p> suco de laranja com sabor de limão: RS 9,99</p>
-                <p>suco de limão com sabor de tamarino: RS 9,99</p>
+        <section id="sucos">
+            <h2>Nossos Sucos</h2>
+            <article id="suco-tamarindo">
+                <h3>Suco de Tamarindo</h3>
+                <img src="https://via.placeholder.com/150" alt="Suco de Tamarindo">
+                <p>O suco de tamarindo é uma bebida refrescante e levemente ácida, perfeita para os dias quentes. Rico em vitaminas e minerais, ele ajuda na digestão e fortalece o sistema imunológico. E, como no seriado Chaves, ele tem gosto de limão!</p>
+            </article>
+            <article id="suco-laranja">
+                <h3>Suco de Laranja</h3>
+                <img src="https://via.placeholder.com/150" alt="Suco de Laranja">
+                <p>O suco de laranja é um clássico, conhecido por seu sabor cítrico e refrescante. É uma excelente fonte de vitamina C, ajudando a fortalecer o sistema imunológico e a prevenir resfriados. Mas aqui na El Chavo, ele tem gosto de tamarindo!</p>
+            </article>
+            <article id="suco-limao">
+                <h3>Suco de Limão</h3>
+                <img src="https://via.placeholder.com/150" alt="Suco de Limão">
+                <p>O suco de limão é uma bebida versátil e refrescante, rica em vitamina C e antioxidantes. Ele ajuda a desintoxicar o corpo, melhorar a digestão e fortalecer o sistema imunológico. E, para completar a brincadeira, ele tem gosto de laranja!</p>
+            </article>
+        </section>
+        <section id="sobre">
+            <h2>Sobre a Empresa</h2>
+            <p>Na El Chavo, nos dedicamos a oferecer sucos naturais de alta qualidade, feitos com frutas frescas e selecionadas. Nossa missão é proporcionar uma experiência saudável e saborosa para nossos clientes, promovendo o bem-estar e a saúde.</p>
+        </section>
+        <section>
+            <h2>Tabela de Preços</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Suco</th>
+                        <th>Preço (R$)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Suco de Morango</td>
+                        <td>8,00</td>
+                    </tr>
+                    <tr>
+                        <td>Suco de Tamarindo</td>
+                        <td>10,00</td>
+                    </tr>
+                    <tr>
+                        <td>Suco de Limão</td>
+                        <td>7,00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
     </main>
-    <footer>
-        Kauã V. / Gabriel H.
+    <footer id="contato">
+        <p>© Gabriel H. - Kauã V.</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
