@@ -11,4 +11,4 @@ document.querySelector('.menu-sucos > a').addEventListener('click', function(eve
     } else {
         sucosMenu.querySelector('ul').style.display = 'none';
     }
-});
+}); 
