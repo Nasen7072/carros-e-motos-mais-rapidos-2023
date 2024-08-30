@@ -69,20 +69,16 @@ center center;
  height: 92vh;
 
 }
-  nav-list li {
+.nav-list li {
 
- letter-spacing: 3px;
+letter-spacing: 3px;
 
- margin-left: 32px;
+margin-left: 32px;
 
-} 
+}
 
-.mobile-menu {
-
+.mobile-menu div {
  cursor: pointer;
-
- }
-   .mobile-menu div {
 
 width: 32px;
 
@@ -90,10 +86,8 @@ height: 2px;
 
 background: #fff;
 
-
-
 margin: 8px;
 
-
-
 }
+
+I
