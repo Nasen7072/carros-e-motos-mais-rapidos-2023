@@ -39,7 +39,7 @@ function flipCard(card) {
     card.classList.toggle('flipped');
 }
 
-// Função para permitir o arrasto dos cards
+// Função para permitir o arrasto dos cards (opcional)
 function makeCardsDraggable() {
     const cards = document.querySelectorAll('.card');
 
