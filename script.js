@@ -39,5 +39,49 @@ function flipCard(card) {
     card.classList.toggle('flipped');
 }
 
-// Chama a função setTheme quando a página carrega
-document.addEventListener("DOMContentLoaded", setTheme);
+// Função para permitir o arrasto dos cards
+function makeCardsDraggable() {
+    const cards = document.querySelectorAll('.card');
+
+    cards.forEach(card => {
+        let isDragging = false;
+        let startX, startY, initialX, initialY;
+
+        card.addEventListener('mousedown', (e) => {
+            isDragging = true;
+            startX = e.clientX;
+            startY = e.clientY;
+            const rect = card.getBoundingClientRect();
+            initialX = rect.left;
+            initialY = rect.top;
+            card.style.transition = 'none';
+            card.style.zIndex = '1000';
+        });
+
+        document.addEventListener('mousemove', (e) => {
+            if (!isDragging) return;
+            const dx = e.clientX - startX;
+            const dy = e.clientY - startY;
+            card.style.transform = `translate(${dx}px, ${dy}px) rotate(${dx * 0.05}deg)`;
+        });
+
+        document.addEventListener('mouseup', (e) => {
+            if (!isDragging) return;
+            isDragging = false;
+            card.style.transition = 'transform 0.3s';
+            card.style.transform = 'translate(0, 0) rotate(0deg)';
+            card.style.zIndex = '1';
+        });
+
+        // To prevent the card from flipping when dragging
+        card.addEventListener('dragstart', (e) => {
+            e.preventDefault();
+        });
+    });
+}
+
+// Chama as funções quando a página carrega
+document.addEventListener("DOMContentLoaded", () => {
+    setTheme();
+    makeCardsDraggable();
+});
